@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "dayjs": "^1.11.5",
     "stein-js-client": "^0.0.2"
   },
   "name": "1015_hackathon",
