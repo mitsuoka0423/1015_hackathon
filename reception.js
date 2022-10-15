@@ -24,7 +24,7 @@ store
     const str = res.updatedRange;
     const temp_id = String(params.temp_id);
     console.log(temp_id);
-    const row_num = parseInt(str.match(/\d+$/)[0],10) + 1;
+    const row_num = parseInt(str.match(/\d+$/)[0],10) - 1;
     console.log(row_num);
     store
       .edit('reception', {
