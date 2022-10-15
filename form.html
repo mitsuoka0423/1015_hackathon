@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container">
+		<h2>予約フォーム</h2>
+		<p></p>
+		<p> 氏名 <input type="text" id="id"></p>
+		<p> 生年月日
+			<input type="date" name="dirthday">
+		<p> 希望する医師
+			<select name="hope">
+				<option value="">選択してください</option>
+				<option value="A先生">A先生</option>
+				<option value="B先生">B先生</option>
+				<option value="C先生">C先生</option>
+				<option value="D先生">D先生</option>
+				<option value="E先生">E先生</option>
+				<option value="F先生">F先生</option>
+				<option value="G先生">G先生</option>
+			</select>
+		</p>
+		<p><input type="submit" value="送信" onclick="showMessage()" class="btn btn-outline-primary"></p>
+	</div>
+</body>
+</html>
