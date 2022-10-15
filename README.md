@@ -11,7 +11,7 @@
 
 受付: reception
 - name
-- adress
-- phone_num
 - birth_day
 - hope_for
+- next
+- temp_id
