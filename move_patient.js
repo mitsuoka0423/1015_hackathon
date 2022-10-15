@@ -1,5 +1,5 @@
-const dayjs = require('dayjs');
-const now = dayjs();
+// const dayjs = require('dayjs');
+// const now = dayjs();
 
 const SteinStore = require('stein-js-client');
 const store = new SteinStore(
@@ -25,17 +25,10 @@ const move_patient = async (current_state, next = "") => {
             serch: {
                 temp_id: target_id
             }, set: {
-                next: next
+                next: next,
+                update_time: now.format('HH/mm')
             }
         })
-    });
-    store.edit('reception', {
-        search: {
-            temp_id: target_id
-        }, set: {
-            next: next,
-            update_time: now.format('HH/mm')
-        }
     })
     .then(res => {
         console.log(res);
