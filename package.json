@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "stein-js-client": "^0.0.2"
+  },
+  "name": "1015_hackathon",
+  "description": "## process.env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/watanabe-tsubasa/1015_hackathon.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/watanabe-tsubasa/1015_hackathon/issues"
+  },
+  "homepage": "https://github.com/watanabe-tsubasa/1015_hackathon#readme"
+}
