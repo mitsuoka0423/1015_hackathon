@@ -1,5 +1,7 @@
-// const dayjs = require('dayjs');
-// const now = dayjs();
+'use strict';
+
+const dayjs = require('dayjs');
+const now = dayjs();
 
 const SteinStore = require('stein-js-client');
 const store = new SteinStore(
@@ -18,21 +20,20 @@ const move_patient = async (current_state, next = "") => {
             return parseInt(element.temp_id,10);
         });
         // console.log(id_list);
-        const target_id = id_list.indexOf(Math.min(...id_list));
+        const target_id = String(Math.min(...id_list));
         // console.log(Math.min(...id_list));
         console.log(target_id);
         store.edit('reception', {
-            serch: {
-                temp_id: target_id
-            }, set: {
+            search: {temp_id: target_id},
+            set: {
                 next: next,
                 update_time: now.format('HH/mm')
             }
         })
+        .then(res => {
+            console.log(res);
+        })
     })
-    .then(res => {
-        console.log(res);
-    });
 }
 
-move_patient('xp', 'account');
+move_patient('xp');
